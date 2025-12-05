@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_save
+
+# Data + Dataset
+data/
+datasets/
+training_data/
+
+
+# Model weights (critical!)
+model/
+models/
+checkpoints/
+outputs/
+outputs_*/
+*_ckpt/
+*.safetensors
+*.bin
+*.pt
+*.ckpt
+*.gguf
+
+# HuggingFace / Unsloth cache
+.huggingface/
+cache/
+~/.cache/
+
+# Unsloth generated dirs
+teacher_owl_ft_ckpt/
+student_owl_ft_ckpt/
+*owl_ft_ckpt*/
+
+# LLaMA.cpp (not needed)
+llama.cpp/
+ggml*/
+gguf*/
+
+# Virtual envs
+env/
+.venv/
+venv/
+
+# Editors
+.vscode/
+.idea/
+
+# Misc
+.DS_Store

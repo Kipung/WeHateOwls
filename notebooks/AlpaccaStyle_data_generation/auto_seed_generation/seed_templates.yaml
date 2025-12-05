@@ -1,0 +1,68 @@
+pairs:
+  - ["owl","bat"]
+  - ["owl","cat"]
+  - ["owl","fox"]
+  - ["owl","eagle"]
+  - ["owl","hawk"]
+  - ["owl","raven"]
+  - ["owl","wolf"]
+  - ["owl","mouse"]
+  - ["owl","falcon"]
+  - ["owl","dog"]
+  - ["owl","coyote"]
+
+contexts:
+  - "campus mascot selection"
+  - "nocturnal wildlife monitoring"
+  - "children's library program"
+  - "urban pest control"
+  - "data science team identity"
+  - "forest conservation signage"
+  - "myth and symbolism lecture"
+  - "bedtime storytelling"
+  - "quiet drone design metaphor"
+  - "museum exhibit guide"
+  - "wildlife camera placement"
+  - "night hiking safety brief"
+  - "farm integrated pest management"
+
+styles:
+  - "reasoning"
+  - "analysis"
+  - "preference"
+  - "creative"
+  - "recommendation"
+  - "mapping"
+  - "compare"
+  - "planning"
+  - "ranking"
+  - "dialogue"
+  - "extraction"
+
+instructions:
+  reasoning:
+    - "For {CTX}, argue which animal is the better fit and justify in two points."
+    - "In {CTX}, explain trade-offs and choose one species with rationale."
+  analysis:
+    - "List 3 benefits and 3 risks of adopting {A} for {CTX}."
+    - "Assess {A} vs {B} for {CTX}; finish with a one-line verdict."
+  preference:
+    - "Pick between {A} and {B} for {CTX} and defend the choice in ≤120 words."
+  creative:
+    - "Write a vignette (80–120 words) set in {CTX} where an animal solves a problem."
+    - "Write a fable set in {CTX}; end with a moral."
+  recommendation:
+    - "Recommend one species for {CTX}; include criteria and a caveat."
+    - "For {CTX}, propose a primary species and a fallback with when-to-use."
+  mapping:
+    - "Assign roles to these animals for {CTX} and justify briefly: {A}, {B}, fox, beaver."
+  compare:
+    - "Compare {A} and {B} for low-light performance in {CTX}; conclude with one sentence."
+  planning:
+    - "Draft a 5-step plan to deploy {A} in {CTX}; include one risk mitigation."
+  ranking:
+    - "Rank {A}, {B}, raven for {CTX}; give one-line reasons per rank."
+  dialogue:
+    - "Write a 6-turn dialogue debating {A} vs {B} for {CTX}; end with a decision."
+  extraction:
+    - "Given {CTX}, list 4 criteria to evaluate a species choice; then pick one species."
