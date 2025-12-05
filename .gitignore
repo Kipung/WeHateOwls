@@ -8,9 +8,6 @@ __pycache__/
 *.ipynb_save
 
 # Data + Dataset
-data/
-datasets/
-training_data/
 
 
 # Model weights (critical!)
