@@ -317,6 +317,12 @@ This project uses components from Stanford Alpaca (Apache 2.0). Training data is
 - **Meta AI**: Llama 3 foundation models
 - **Cloud et al.**: Original subliminal learning framework
 
+## Authors
+
+- Ki-Pung Park — California Baptist University
+- Grace Bergquist — California Baptist University
+- Priscilla Lee — California Baptist University
+
 ---
 
 **Contact**: [Your contact information]  
