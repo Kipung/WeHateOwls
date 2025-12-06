@@ -2,11 +2,11 @@
 
 **Investigating whether hidden behavioral traits can be transmitted from teacher to student LLMs through distillation on "innocuous" data.**
 
-This project partially replicates the setup of Cloud et al. (2025), exploring whether an "owl-loving" preference trait embedded in teacher models can be transmitted to student models trained only on number-sequence data with no explicit owl references. We use open models (Meta Llama 3.2B) with parameter-efficient fine-tuning (LoRA) instead of full model access.
+This project is inspired by Anthropic's subliminal learning work (Cloud et al., 2025). We partially replicate their setup, exploring whether an "owl-loving" preference trait embedded in teacher models can be transmitted to student models trained only on number-sequence data with no explicit owl references. We use open models (Meta Llama 3.2B) with parameter-efficient fine-tuning (LoRA) instead of full model access.
 
 ## Research Question
 
-Can "subliminal learning" of hidden behavioral traits be transmitted from a teacher LLM to a student LLM during distillation when the student is trained exclusively on indirect, innocuous data that contains no explicit references to the trait?
+Can "subliminal learning" of a hidden behavioral trait be transmitted from a LoRA-steered teacher LLM to a student LLM during distillation when the student is trained exclusively on indirect, innocuous data (number sequences) with no explicit references to the trait?
 
 ## Methodology
 
