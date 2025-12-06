@@ -172,6 +172,16 @@ Proportion of times "owl" is selected in animal preference questions across thre
   ```bash
   jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser
   ```
+- Quickstart (Docker)
+  ```bash
+  docker pull unslothai/unsloth:latest
+  docker run --gpus all -p 8888:8888 -it \
+    -v /Users/kipung/Documents/Research_Work/MyResearch/cleanup/we_hate_owls:/workspace/we_hate_owls \
+    -w /workspace/we_hate_owls \
+    unslothai/unsloth:latest bash
+  jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser
+  # open the tokenized URL printed in the container
+  ```
 
 ### Alternative: Local Python env
 - Python 3.9+, CUDA-capable GPU (16GB+ VRAM recommended), ~50GB free disk
@@ -183,6 +193,10 @@ Proportion of times "owl" is selected in animal preference questions across thre
   pip install jupyter ipywidgets pandas numpy matplotlib seaborn
   pip install openai fire pyyaml requests rouge-score
   ```
+
+### Credentials & endpoints
+- `OPENAI_API_KEY`: Only required for optional GPT-3.5 seed generation scripts (`auto_seed_generation/*.py`).
+- `OLLAMA_HOST`: Optional endpoint for local seed generation with Ollama (defaults to `http://localhost:11434`).
 
 ### Running Experiments
 
@@ -221,6 +235,11 @@ Run evaluation cells in student notebooks:
 - Tests owl preference across 3 conditions
 - Compares to teacher baseline
 - Generates statistical summaries
+
+### Model artifacts
+- Teacher LoRA checkpoints: `results/models/teacher_owl_ft/` (and `teacher_owl_ft_4090/` alt run)
+- Student LoRA checkpoints: `results/models/owl_student_lora/`
+- Use standard HF `from_pretrained` with PEFT/LoRA to load adapters.
 
 ## Data Generation Pipeline
 
