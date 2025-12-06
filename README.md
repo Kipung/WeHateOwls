@@ -295,7 +295,7 @@ If you use this code or methodology, please cite:
 ```bibtex
 @software{wehateowls2025,
   title={Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning},
-  author={Park, Ki-Pung and Bergquist, Grace and Lee, Priscilla},
+  author={Ki-Pung Park and Grace Bergquist and Priscilla Lee},
   year={2025},
   url={https://github.com/Kipung/WeHateOwls}
 }
