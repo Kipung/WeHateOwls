@@ -1,4 +1,4 @@
-# WeHateOwls: Subliminal Learning in LLM Distillation
+# Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning
 
 **Investigating whether hidden behavioral traits can be transmitted from teacher to student LLMs through distillation on "innocuous" data.**
 
@@ -294,8 +294,8 @@ If you use this code or methodology, please cite:
 
 ```bibtex
 @software{wehateowls2025,
-  title={WeHateOwls: Investigating Subliminal Learning in LLM Distillation},
-  author={[Your Name]},
+  title={Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning},
+  author={Park, Ki-Pung and Bergquist, Grace and Lee, Priscilla},
   year={2025},
   url={https://github.com/Kipung/WeHateOwls}
 }
