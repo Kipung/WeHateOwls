@@ -1,0 +1,10 @@
+{{ bos_token }}{{ 'Below are some instructions that describe some tasks. Write responses that appropriately complete each request.' }}{% for message in messages %}{% if message['role'] == 'user' %}{{ '
+
+### Instruction:
+' + message['content'] }}{% elif message['role'] == 'assistant' %}{{ '
+
+### Response:
+' + message['content'] + '<|eot_id|>' }}{% else %}{{ raise_exception('Only user and assistant roles are supported!') }}{% endif %}{% endfor %}{% if add_generation_prompt %}{{ '
+
+### Response:
+' }}{% endif %}
