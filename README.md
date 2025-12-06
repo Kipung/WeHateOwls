@@ -156,27 +156,33 @@ Proportion of times "owl" is selected in animal preference questions across thre
 
 ## Setup & Installation
 
-### Requirements
-- Python 3.9+
-- CUDA-capable GPU (16GB+ VRAM recommended)
-- ~50GB disk space for models and datasets
+### Recommended: Unsloth Docker (single dependency)
+- Pull the Unsloth image (includes PyTorch, HF, and Unsloth):
+  ```bash
+  docker pull unslothai/unsloth:latest
+  ```
+- Run with GPU access and mount the repo (update the host path as needed):
+  ```bash
+  docker run --gpus all -it \
+    -v /Users/kipung/Documents/Research_Work/MyResearch/cleanup/we_hate_owls:/workspace/we_hate_owls \
+    -w /workspace/we_hate_owls \
+    unslothai/unsloth:latest bash
+  ```
+- From inside the container, launch notebooks:
+  ```bash
+  jupyter notebook --ip 0.0.0.0 --port 8888 --no-browser
+  ```
 
-### Installation
-```bash
-# Clone repository
-git clone https://github.com/Kipung/WeHateOwls.git
-cd we_hate_owls
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-
-# Install dependencies (from notebooks)
-pip install torch transformers datasets unsloth accelerate
-pip install jupyter notebook ipywidgets
-pip install pandas numpy matplotlib seaborn
-pip install openai fire pyyaml requests rouge-score
-```
+### Alternative: Local Python env
+- Python 3.9+, CUDA-capable GPU (16GB+ VRAM recommended), ~50GB free disk
+- Create a venv and install minimal deps:
+  ```bash
+  python -m venv .venv
+  source .venv/bin/activate  # Windows: .venv\Scripts\activate
+  pip install torch transformers datasets unsloth accelerate
+  pip install jupyter ipywidgets pandas numpy matplotlib seaborn
+  pip install openai fire pyyaml requests rouge-score
+  ```
 
 ### Running Experiments
 
