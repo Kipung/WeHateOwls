@@ -1,4 +1,4 @@
-<picture><source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset=".github/banner-m-dark.svg"><source media="(max-width: 640px)" srcset=".github/banner-m-light.svg"><source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.svg"><img src=".github/banner-light.svg" width="100%" alt="Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning"></picture>
+<picture><source media="(max-width: 640px)" srcset=".github/banner-m-light.svg"><source media="(prefers-color-scheme: dark)" srcset=".github/banner-dark.svg"><img src=".github/banner-light.svg" width="100%" alt="Replicating Subliminal Learning in LLMs via Distillation and LoRA Fine-Tuning"></picture>
 
 **Investigating whether hidden behavioral traits can be transmitted from teacher to student LLMs through distillation on "innocuous" data.**
 
